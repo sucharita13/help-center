@@ -15,36 +15,37 @@ body {
   font-family: var(--primary-ff);
 }
 
-a,button:hover{
+a,
+button:hover {
   cursor: pointer;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-header a{
+header a {
   color: var(--primary-color);
 }
 
-header a, header a:hover{
+header a,
+header a:hover {
   text-decoration: none;
 }
 
-
 .main {
-  max-width: 80rem;
+  max-width: 70rem;
 }
 
 header {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   background-color: var(--main-color);
   color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 1rem;
 }
 
 header h3 {
@@ -53,37 +54,36 @@ header h3 {
 
 .right-nav {
   height: 40px;
-  width: 23%;
+  width: 44%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .submit-button {
-  height: 100%;
-  width: 62%;
+  height: 95%;
+  width: 64%;
   border: 1px solid white;
-  border-radius: 5px;
   background-color: transparent;
+}
+
+.button-style {
+  border-radius: 5px;
   color: var(--primary-color);
   font-family: var(--primary-ff);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .sign-in-button {
   height: 100%;
-  width: 34%;
+  width: 31%;
   border: none;
-  border-radius: 5px;
-  color: var(--primary-color);
   background-color: var(--link-color);
-  font-family: var(--primary-ff);
-  font-size: 15px;
 }
 
 .questions-search {
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@ header h3 {
 }
 
 .search-content {
-  width: 43%;
+  width: 81%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -102,13 +102,13 @@ header h3 {
 
 .search-content h1 {
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 20px 0px;
 }
 
 .search-content input {
   width: 100%;
-  height: 13%;
+  height: 10%;
   border-width: 1px;
   border-radius: 4px;
   padding-left: 10px;
@@ -117,11 +117,11 @@ header h3 {
 }
 
 .search-content button {
-  height: 9%;
+  height: 6%;
   width: 6%;
   position: absolute;
-  right: 0.8rem;
-  bottom: 8.313rem;
+  right: 4%;
+  bottom: 37.9%;
   background-image: url("/images/bx-right-arrow-alt.svg");
   background-repeat: no-repeat;
   background-color: transparent;
@@ -131,13 +131,13 @@ header h3 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 80%;
-  width: 75%;
+  grid-template-columns: repeat(1, 1fr);
+  height: 90%;
+  width: 100%;
 }
 
 .grid {
-  height: 75%;
+  height: 100%;
   width: 25rem;
   display: flex;
   justify-content: space-evenly;
@@ -145,17 +145,18 @@ header h3 {
 }
 
 .grid img {
-  height: 5rem;
+  height: 3rem;
   margin-top: 1.5rem;
 }
 
 .content {
   height: 100%;
-  width: 65%;
+  width: 75%;
 }
 
 .content span {
-  font-size: 20px;
+  font-size: 17px;
+  height: 95%;
 }
 
 .content a {
@@ -164,16 +165,16 @@ header h3 {
 }
 
 .content-text {
-  font-size: 18px;
-  height: 60%;
+ 
+  height: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .grid-container-main {
   width: 100%;
-  height: 65rem;
+  height: 85rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,17 +182,17 @@ header h3 {
 
 .footer-info {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 15rem;
+  grid-template-columns: repeat(3, 1fr);
+  height: 25rem;
 }
 
-footer{
-  height: 23rem;
+footer {
+  height: 30rem;
   background-color: var(--main-color);
   color: var(--primary-color);
   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .links {
@@ -202,15 +203,201 @@ footer{
   height: 15%;
 }
 
-.column{
-  margin:0 auto;
+.column {
+  margin: 0 auto;
 }
 
-footer span{
+footer span {
   display: flex;
   justify-content: center;
+  font-size: 12px;
 }
 
-footer a{
+footer a {
   padding: 5px;
+}
+
+
+
+@media (min-width: 790px) {
+ 
+  header {
+    padding: 0.5rem 3rem;
+  }
+
+  .right-nav {
+    width: 31%;  
+  }
+
+  .submit-button {
+    width: 60%;
+  }
+
+  .sign-in-button {
+    width: 34%;
+    border: none;
+  }
+
+  .search-content {
+    width: 55%;
+  }
+
+  .search-content h1 {
+    font-size: 3rem;
+  }
+
+  .search-content input {
+    width: 95%;
+  }
+
+  .search-content button {
+    bottom: 37%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: 80%;
+  }
+
+  .grid {
+    height: 75%;
+    width: 24rem;
+  }
+
+  .grid img {
+    height: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  .content {
+    height: 95%;
+    width: 65%;
+  }
+
+  .content span {
+    font-size: 15px;
+  }
+
+  .content-text {
+    font-size: 15px;
+    height: 60%;
+    justify-content: space-between;
+  }
+
+  .grid-container-main {
+    width: 97%;
+    height: 65rem;
+  }
+
+  .footer-info {
+    grid-template-columns: repeat(5, 1fr);
+    height: 15rem;
+  }
+
+  footer {
+    height: 23rem;
+  }
+
+
+
+  footer span {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer a {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1110px) {
+  .main {
+    max-width: 80rem;
+  }
+
+  header {
+    height: 5rem;
+    padding: 0.5rem 5rem;
+  }
+
+
+  .right-nav {
+    width: 23%;
+  }
+
+  .submit-button {
+    height: 100%;
+    width: 62%;
+    font-size: 15px;
+  }
+
+  .sign-in-button {
+    height: 100%;
+    width: 34%;
+    font-size: 15px;
+  }
+
+  .search-content {
+    width: 43%;
+  }
+
+  .search-content h1 {
+    font-size: 3rem;
+  }
+
+  .search-content input {
+    width: 90%;
+  }
+
+  .search-content button {
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    right: 8%;
+    bottom: 36.5%;
+    background-image: url("/images/bx-right-arrow-alt.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: 80%;
+    width: 75%;
+  }
+
+  .grid {
+    height: 75%;
+  }
+
+
+  .content {
+    width: 65%;
+  }
+
+  .content span {
+    font-size: 20px;
+  }
+
+
+  .content-text {
+    font-size: 18px;
+    height: 60%;
+    justify-content: space-between;
+  }
+
+  .grid-container-main {
+    height: 65rem;
+  }
+
+  .footer-info {
+    grid-template-columns: repeat(5, 1fr);
+    height: 15rem;
+  }
+
+  footer {
+    height: 23rem;
+  }
 }
